@@ -14,7 +14,3 @@ var celsiusToFarenheit = function (farenheit) {
 
     return celsius;
 }
-
-function mifuncion(){
-    
-}
