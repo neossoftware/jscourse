@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <script>
+
+      var otraOpera = '';
+
+      do {
+        var tope = prompt("Introduce el valor de 1 a 100");
+        var suma = 0;
+        //1 + 2 + 3+ 4 +5
+        var indice = 1;
+        do {
+          console.log(indice);
+          suma = suma + indice;
+
+          indice = indice + 1;
+        } while (indice <= tope);
+
+        alert("La sumatoria entre 1 y " + tope + " es: " + suma);
+        console.log("Sumatoria: " + suma);
+
+        otraOpera = prompt("Quieres realizar otra operacion? y/n"); 
+
+        otraOpera = otraOpera.toUpperCase();
+
+      } while (otraOpera == 'Y' );
+     
+    </script>
+  </head>
+  <body></body>
+</html>

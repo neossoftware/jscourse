@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <script src="" type="javas">
+    </script>
+    <script>
+      function calcula() {
+        //
+        var celsius = document.getElementById("celsius").value;
+
+        console.log(celsius);
+
+        var farenheit = farenheitToCelsius(celsius);
+
+        document.getElementById("resultado").innerHTML =
+          " Farenheit = " + farenheit;
+      }
+
+      function farenheitToCelsius(farenheit) {
+        var celsius = (5 * (farenheit - 32)) / 9;
+
+        return celsius;
+      }
+    </script>
+  </head>
+  <body>
+    <input id="celsius" name="celsius" type="text" />
+
+    <input type="button" value="calcular" onclick="calcula()" />
+
+    <div id="resultado"></div>
+  </body>
+</html>

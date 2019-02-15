@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <script>
+      do {
+        //numero del 1 al 100
+        var numero = prompt("Ingrese valor 1- 100");
+
+        //realizar la sumatoria para 4 es 1 +2+3+4
+
+        var sum = 0;
+        var cont = 1;
+        var sumstr = "0";
+        do {
+          sumstr = sumstr + " + " + cont + "+";
+          sum = sum + cont;
+          cont = cont + 1;
+        } while (cont <= numero);
+
+        alert("resultado: " + sum);
+
+        var repetir =  prompt("Desea repetir ? y/n")
+
+      } while (repetir == 'y');
+    </script>
+  </head>
+  <body></body>
+</html>

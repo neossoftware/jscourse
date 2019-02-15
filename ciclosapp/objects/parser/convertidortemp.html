@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+
+                <form>
+                    <div class="form-group row">
+                        <label for="txtCelsius" class="col-4 col-form-label">Grado Celsius</label>
+                        <div class="col-8">
+                            <input id="txtCelsius" name="txtCelsius" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="txtFarenheit" class="col-4 col-form-label">Grados Farenheit</label>
+                        <div class="col-8">
+                            <input id="txtFarenheit" name="txtFarenheit" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-4 col-8">
+                            <button name="submit" type="button" class="btn btn-primary" onclick="calcula()">Calcular</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="mensajes">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="functions.js"></script>
+
+   <script type="text/javascript" src="convertidor.js"></script>
+</body>
+
+</html>
